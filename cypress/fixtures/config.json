@@ -1,0 +1,11 @@
+{
+
+
+    "appURL" : "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F",
+    "email" : "admin@yourstore.com",
+    "pass": "admin",
+    "start": "5/4/2023",
+    "end": "5/5/2023"
+
+
+}

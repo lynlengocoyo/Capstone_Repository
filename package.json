@@ -1,0 +1,24 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "executeTestOnchromeHeaded": "npx cypress run --spec .\\cypress\\e2e\\MIDTERM_Exercise\\Midterm_Exercise.spec.cy.js --browser chrome --headed",
+    "executeTestOnchromeHeadless": "npx cypress run --spec .\\cypress\\e2e\\MIDTERM_Exercise\\Midterm_Exercise.spec.cy.js --browser chrome --headless",
+    "executeTestOnedgeHeaded": "npx cypress run --spec .\\cypress\\e2e\\MIDTERM_Exercise\\Midterm_Exercise.spec.cy.js --browser edge --headed",
+    "executeTestOnedgeHeadless": "npx cypress run --spec .\\cypress\\e2e\\MIDTERM_Exercise\\Midterm_Exercise.spec.cy.js --browser edge --headless"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.3",
+    "cypress": "^12.10.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.4.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
