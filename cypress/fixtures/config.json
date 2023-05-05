@@ -1,11 +1,25 @@
 {
 
-
     "appURL" : "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F",
     "email" : "admin@yourstore.com",
     "pass": "admin",
+
+
+    "Vendor_Name": "Vendor 1",
+
+
     "start": "5/4/2023",
-    "end": "5/5/2023"
+    "end": "5/5/2023",
 
 
-}
+    "Name_FileUpload": "PC set",
+    "Description_FileUpload": "Set of computer",
+
+
+    "NewData_TItle": "New NopCommerce",
+    "NewData_ShortDescription": "Test short description",
+    "NewData_FullDescription": "Test Long description",
+    "NewData_StartDate": "05/04/2023",
+    "NewData_EndDate": "05/05/2023"
+
+ }   
