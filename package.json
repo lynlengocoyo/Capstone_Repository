@@ -8,8 +8,35 @@
     "executeTestOnchromeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\04_TestCases_spec.cy.js --browser chrome --headed",
     "executeTestOnchromeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\04_TestCases_spec.cy.js --browser chrome --headless",
     "executeTestOnedgeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\04_TestCases_spec.cy.js --browser edge --headed",
-    "executeTestOnedgeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\04_TestCases_spec.cy.js --browser edge --headless"
+    "executeTestOnedgeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\04_TestCases_spec.cy.js --browser edge --headless",
+
+
+    "TC01_executeTestOnchromeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC01_SearchUseVendorName_spec.cy.js --browser chrome --headed",
+    "TC01_executeTestOnchromeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC01_SearchUseVendorName_spec.cy.js --browser chrome --headless",
+    "TC01_executeTestOnedgeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC01_SearchUseVendorName_spec.cy.js --browser edge --headed",
+    "TC01_executeTestOnedgeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC01_SearchUseVendorName_spec.cy.js --browser edge --headless",
+  
+  
+    "TC02_executeTestOnchromeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC02_DatePickerUseCreatedFromAndTo_spec.cy.js --browser chrome --headed",
+    "TC02_executeTestOnchromeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC02_DatePickerUseCreatedFromAndTo_spec.cy.js --browser chrome --headless",
+    "TC02_executeTestOnedgeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC02_DatePickerUseCreatedFromAndTo_spec.cy.js --browser edge --headed",
+    "TC02_executeTestOnedgeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC02_DatePickerUseCreatedFromAndTo_spec.cy.js --browser edge --headless",
+  
+
+    "TC03_executeTestOnchromeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC03_FileUpload_spec.cy.js --browser chrome --headed",
+    "TC03_executeTestOnchromeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC03_FileUpload_spec.cy.js --browser chrome --headless",
+    "TC03_executeTestOnedgeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC03_FileUpload_spec.cy.js --browser edge --headed",
+    "TC03_executeTestOnedgeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC03_FileUpload_spec.cy.js --browser edge --headless",
+  
+
+    "TC04_executeTestOnchromeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC04_AddNewItem_spec.cy.js --browser chrome --headed",
+    "TC04_executeTestOnchromeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC04_AddNewItem_spec.cy.js --browser chrome --headless",
+    "TC04_executeTestOnedgeHeaded": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC04_AddNewItem_spec.cy.js --browser edge --headed",
+    "TC04_executeTestOnedgeHeadless": "npx cypress run --spec .\\cypress\\e2e\\Capstone_Project\\TC04_AddNewItem_spec.cy.js --browser edge --headless"
+  
+  
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
