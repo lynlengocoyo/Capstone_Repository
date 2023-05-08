@@ -12,25 +12,31 @@ describe('NOP Comm', ()=> {
 
     })
 
-it('Date picker using Created from', ()=> {
+    it('File/Image upload', ()=> {
 
-  cy.login('admin@yourstore.com','admin')
+      cy.login(data.email,data.pass)
 
-  cy.title().should('eq', 'Dashboard / nopCommerce administration')
+      cy.title().should('eq', 'Dashboard / nopCommerce administration')
 
-  cy.xpath("(//p[contains(text(),'Catalog')])[1]").click()
+      cy.xpath("(//p[contains(text(),'Catalog')])[1]").click()
 
-  cy.get('.menu-open > .nav > :nth-child(2) > .nav-link').click()
+      cy.get('.menu-open > .nav > :nth-child(2) > .nav-link').click()
 
-  cy.get('div.float-right > a.btn').click()
+      cy.get('div.float-right > a.btn').click()
   
-  cy.get('#Name').clear().type('Test')
+      cy.get('#Name').clear().type(data.Name_FileUpload)
 
-  cy.CategoryHandleIframe('#Description_ifr').clear().type('Description')
+      cy.CategoryHandleIframe('#Description_ifr').clear().type(data.Description_FileUpload)
 
-  cy.get('#ParentCategoryId').select('Computers').should('have.value','1')
+      cy.get('#ParentCategoryId').select('Computers').should('have.value','1')
 
-  cy.get('.qq-upload-button-selector > input').attachFile("sampleDemo.pdf")
+      cy.get('.qq-upload-button-selector > input').attachFile("Computer.jpg")
+
+      cy.get('[name="save"]').click()
+
+      cy.get('.navbar-nav > :nth-child(3) > .nav-link').click()
+    
+      cy.screenshot
 
 })
 
