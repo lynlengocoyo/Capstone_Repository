@@ -3,9 +3,9 @@
 describe('GITHUB Repo', ()=> {
 
       
-      var ValidToken = "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"
+      var ValidToken = "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"
       var FetchRepoName = ""
-      var NewRepository = "Capstone_Repository2"
+      var NewRepository = "Capstone_Repository5"
 
 
   it('Test case 1', ()=> {
@@ -25,7 +25,7 @@ describe('GITHUB Repo', ()=> {
 
          headers:
             {
-               "Authorization" : "Bearer" + ValidToken,
+               "Authorization" : "Bearer " + ValidToken,
                "Content-Type" : "application/json" 
 
             }
@@ -34,7 +34,7 @@ describe('GITHUB Repo', ()=> {
      
      .then( (APIresult)=> {
 
-        expect(APIresult).to.eq(200)
+        expect(APIresult.status).to.eql(201)
        // expect(APIresult.body[0].full_name).to.contain('lynlengocoyo/Capston_Repository')
       // FetchRepoName = APIresult.body[0].full_name
 

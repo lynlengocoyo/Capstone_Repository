@@ -3,7 +3,7 @@
 describe('GITHUB Repo', ()=> {
 
       
-      var ValidToken = "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"
+      var ValidToken = "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"
       var FetchRepoName = ""
 
 
@@ -15,9 +15,10 @@ describe('GITHUB Repo', ()=> {
         method: "GET",
         url: "https://api.github.com/user/repos",
 
-      header:  {
+      headers:  {
 
-              "Authorization" : "Bearer" + ValidToken
+              "Authorization" : "Bearer " + ValidToken,
+              accept: 'application/json'
                
             }
 
@@ -25,7 +26,7 @@ describe('GITHUB Repo', ()=> {
      
      .then( (APIresult)=> {
 
-        expect(APIresult).to.eq(200)
+        expect(APIresult.status).to.eql(200)
         expect(APIresult.body[0].full_name).to.contain('lynlengocoyo/Capstone_Repository')
         FetchRepoName = APIresult.body[0].full_name
 

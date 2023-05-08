@@ -46,10 +46,13 @@ Cypress.Commands.add("login", (username, password) => {
    //Input email
    cy.get('input#Email').clear().type(username)
 
- //input password
+   //input password
    cy.get('.password').clear().type(password)
 
- //click button
+   //Check Remember me Checkbox
+   cy.get('#RememberMe').check().should('be.checked')
+
+   //click button
    cy.get('.button-1').click()
 
 

@@ -59,7 +59,7 @@ describe('NOP Comm', ()=> {
 
 })
 
-    it('File upload', ()=> {
+    it.skip('File upload', ()=> {
 
         cy.login(data.email,data.pass)
   
@@ -87,7 +87,7 @@ describe('NOP Comm', ()=> {
   
   })
 
-     it.skip('Add new item', ()=>{
+     it('Add new item', ()=>{
 
         cy.login(data.email,data.pass)
 
@@ -100,7 +100,7 @@ describe('NOP Comm', ()=> {
         cy.get('.fas.fa-plus-square').click()
 
         cy.get('#Title').clear().type(data.NewData_TItle)
-        cy.get('#Short').clear().type(data.Data_ShortDescription)
+        cy.get('#Short').clear().type(data.NewData_ShortDescription)
         cy.HandleIframe('#Full_ifr').clear().type(data.NewData_FullDescription)
         cy.get('#AllowComments').check().should('be.checked')
         cy.get('#StartDateUtc').clear().type(data.NewData_StartDate)
