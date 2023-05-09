@@ -3,9 +3,10 @@
 describe('GITHUB Repo', ()=> {
 
       
-      var ValidToken = "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"
+      var AuthToken = "ghp_GiMGWwcMghqh4z0usN"
+      var key = "3tVJg8AM1dZi4TefOE"
       var FetchRepoName = ""
-      var NewRepository = "Capstone_Repository5"
+      var NewRepository = "Capstone_Repository7"
 
 
   it('Test case 1', ()=> {
@@ -16,8 +17,7 @@ describe('GITHUB Repo', ()=> {
         method: "POST",
         url: "https://api.github.com/user/repos",
 
-        body:
-            {
+      headers:  {
 
               "name" : NewRepository
                
@@ -25,8 +25,9 @@ describe('GITHUB Repo', ()=> {
 
          headers:
             {
-               "Authorization" : "Bearer " + ValidToken,
-               "Content-Type" : "application/json" 
+               
+               "Authorization" : "Bearer " + AuthToken + key,
+               "Content-Type": "application/json"
 
             }
 

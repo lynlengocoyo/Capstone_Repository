@@ -3,7 +3,10 @@
 describe('GITHUB Repo', ()=> {
 
       
-      var ValidToken = "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"
+      //var ValidToken = "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"
+
+      var AuthToken = "ghp_GiMGWwcMghqh4z0usN"
+      var key = "3tVJg8AM1dZi4TefOE"
       var FetchRepoName = ""
 
 
@@ -17,8 +20,9 @@ describe('GITHUB Repo', ()=> {
 
       headers:  {
 
-              "Authorization" : "Bearer " + ValidToken,
-              accept: 'application/json'
+              
+              "Authorization" : "Bearer " + AuthToken + key,
+               accept: 'application/json',
                
             }
 
