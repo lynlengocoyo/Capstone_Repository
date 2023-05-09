@@ -37,11 +37,6 @@ import 'cypress-file-upload'
 
 Cypress.Commands.add("login", (username, password) => {
 
-   //Launch application
-   //cy.viewport(1200, 1200)
-
-   //Verify page title
-   //cy.title().should('eq', 'Your store. Login')
 
    //Input email
    cy.get('input#Email').clear().type(username)
@@ -124,11 +119,13 @@ Cypress.Commands.add("login", (username, password) => {
       //Input email
       cy.get('input#Email').clear().type(username)
 
-    //input password
+      //input password
       cy.get('.password').clear().type(password)
 
+      //Check Remember me Checkbox
+      cy.get('#RememberMe').check().should('be.checked')
 
-    //click button
+      //click button
       cy.get('.button-1').click()
 
 })
