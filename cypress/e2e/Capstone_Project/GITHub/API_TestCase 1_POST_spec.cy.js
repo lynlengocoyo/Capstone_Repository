@@ -3,13 +3,13 @@
 describe('GITHUB Repo', ()=> {
 
       
-      var AuthToken = "ghp_GiMGWwcMghqh4z0usN"
-      var key = "3tVJg8AM1dZi4TefOE"
+      var AuthToken = "ghp_aIoMx29QluNz4gQBej"
+      var key = "QZfyZQgq6DTR0qLc4C"
       var FetchRepoName = ""
       var NewRepository = "Capstone_Repository7"
 
 
-  it('Test case 1', ()=> {
+  it('List repositories for the authenticated user', ()=> {
 
 
      cy.request({
@@ -17,7 +17,7 @@ describe('GITHUB Repo', ()=> {
         method: "POST",
         url: "https://api.github.com/user/repos",
 
-      headers:  {
+      body:  {
 
               "name" : NewRepository
                
